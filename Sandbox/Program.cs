@@ -30,12 +30,14 @@ namespace Sandbox
         void MyMain()
         {
             // Get instance of anonymous type with 'City' and 'Name' properties
+            // Return anonymous
             object o = ReturnAnonymous();
 
             // This call to 'Cast' method converts first parameter (object) to the
             // same type as the type of second parameter - which is in this case 
             // anonymous type with 'City' and 'Name' properties
             var typed = Cast(o, new { City = "", Name = "" });
+            // new changes
             Console.WriteLine("Name={0}, City={1}", typed.Name, typed.City);
         }
 

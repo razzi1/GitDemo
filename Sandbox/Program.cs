@@ -31,6 +31,7 @@ namespace Sandbox
         {
             // Get instance of anonymous type with 'City' and 'Name' properties
             // Return anonymous
+            // Demo local commit changes
             object o = ReturnAnonymous();
 
             // This call to 'Cast' method converts first parameter (object) to the
